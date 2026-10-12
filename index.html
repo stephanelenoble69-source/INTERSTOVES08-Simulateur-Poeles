@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>INTERSTOVES08 | Trouvez le poêle adapté à votre maison</title><meta name="theme-color" content="#102d46"><meta name="description" content="Simulez votre projet de poêle à granulés ou à bois avec INTERSTOVES08 : puissance indicative, installation et première estimation."><style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#20252b;background:#101115}*{box-sizing:border-box}body{margin:0}.hero{background:linear-gradient(115deg,#08090b,#27272b 75%,#541419);color:#fff;padding:24px max(18px,calc((100vw - 1050px)/2));display:flex;gap:22px;align-items:center}.logo{width:118px;height:118px;object-fit:contain;border-radius:100%}.eyebrow{font-size:12px;letter-spacing:2px;color:#ff555c;font-weight:800}.hero h1{font-size:clamp(25px,4vw,42px);line-height:1.1;margin:8px 0}.hero p{color:#ddd;margin:8px 0}.wrap{max-width:920px;margin:22px auto;padding:0 16px 40px}.card{background:white;border-radius:18px;padding:clamp(20px,4vw,34px);box-shadow:0 12px 35px #0004}.progress{display:flex;gap:7px;margin-bottom:25px}.progress div{height:7px;flex:1;background:#e8e9ec;border-radius:9px}.progress div.on{background:#df1023}.step{font-size:12px;color:#a01424;font-weight:800;letter-spacing:1px}.card h2{font-size:clamp(23px,3vw,30px);margin:8px 0 9px}.sub{color:#626a72;margin:0 0 22px}.field{margin:18px 0}.field>label,.field>strong{font-weight:700;display:block;margin-bottom:9px}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.choices.triple{grid-template-columns:repeat(3,minmax(0,1fr))}.choice{border:2px solid #e3e5e8;border-radius:13px;padding:14px 12px;cursor:pointer;background:#fff;text-align:left;font:inherit;min-height:62px}.choice.selected{border-color:#e20b22;background:#fff2f3}.choice b{display:block}.choice small{display:block;color:#66707b;margin-top:4px}.inputs{display:grid;grid-template-columns:1fr 1fr;gap:12px}.inputs input,select,textarea{width:100%;border:1px solid #cdd1d8;border-radius:10px;padding:12px;font:inherit}.hint{font-size:13px;color:#737a82;margin-top:8px}.actions{display:flex;justify-content:space-between;gap:10px;margin-top:26px}.btn{border:0;border-radius:10px;padding:13px 20px;font:inherit;font-weight:750;cursor:pointer}.primary{background:#df1023;color:white}.secondary{background:#f0f1f3;color:#222}.btn:disabled{opacity:.45;cursor:not-allowed}.summary{background:#f5f6f7;border-radius:12px;padding:16px;line-height:1.8}.notice{background:#fff4e9;border-left:4px solid #e79d38;padding:12px;margin-top:15px;font-size:14px}.upload{border:2px dashed #b7bec7;padding:22px;border-radius:13px;text-align:center;background:#fafafa}.upload input{max-width:100%}.preview{max-width:100%;max-height:230px;border-radius:10px;margin-top:12px}.footer{text-align:center;color:#c4c6cc;font-size:12px;padding:18px}.hidden{display:none!important}@media(max-width:620px){.hero{padding:16px;gap:12px}.logo{width:76px;height:76px}.choices.triple{grid-template-columns:1fr 1fr}.inputs{grid-template-columns:1fr}.card{padding:18px}.hero p{font-size:13px}}
+
+/* V3 — confort mobile et lisibilité */
+.choice{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;min-height:64px;cursor:pointer}.choice:hover{transform:translateY(-2px);box-shadow:0 5px 16px #00000013}.choice:focus-visible,.btn:focus-visible,input:focus-visible{outline:3px solid #e85b43;outline-offset:3px}.budget{border:1px solid #e7c7b8;background:linear-gradient(135deg,#fff7f1,#fff);border-radius:17px;padding:22px;margin:20px 0}.budget-label{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:#9b382b;font-weight:750;margin-bottom:8px}.budget strong{font-size:clamp(1.25rem,3vw,1.8rem);color:#292126}.budget p{color:#5f6268;font-size:.92rem;line-height:1.5;margin-bottom:0}.upload{border-radius:16px}.hint{line-height:1.5}input{min-height:46px}@media(max-width:650px){.choice{min-height:72px}.budget{padding:17px}.hero{padding-bottom:24px}}
+
+.brand-intro{color:#fff;margin:0 0 20px}.brand-head{margin-bottom:15px}.brand-pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.11em;color:#ff8990}.brand-head h2{font-size:clamp(23px,3.2vw,31px);margin:7px 0}.brand-head p{color:#d4d4d8;max-width:750px;line-height:1.55;margin:0}.ranges{display:grid;grid-template-columns:1fr 1fr;gap:12px}.range{border:1px solid #45464d;background:linear-gradient(130deg,#292a30,#1b1c21);padding:20px;border-radius:15px}.range.serenity{border-color:#8f2d36;background:linear-gradient(130deg,#3a1d23,#211b20)}.range-tag{font-size:11px;letter-spacing:.1em;font-weight:800;color:#ff9099}.range h3{font-size:19px;margin:9px 0 7px}.range p{color:#e1dfe0;font-size:14px;line-height:1.5;margin:0}.maker{font-size:13px;color:#c6c6cb;line-height:1.6;margin:15px 0 0}.maker a{color:#fff;text-decoration:underline;text-underline-offset:3px}.maker a:focus-visible{outline:3px solid #fff;outline-offset:3px}@media(max-width:620px){.ranges{grid-template-columns:1fr}.range{padding:15px}.brand-intro{margin-bottom:18px}}
+
+/* V3.4 — Habillage premium, sans modification du logo ni du parcours */
+:root{background:#101114;color:#202126;font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif}
+body{background:radial-gradient(ellipse at 50% 0%,#34363a 0,#151619 46%,#101114 100%);min-height:100vh}
+.hero{position:relative;isolation:isolate;max-width:none;min-height:295px;padding:30px max(22px,calc((100vw - 1080px)/2));gap:22px;overflow:hidden;background:linear-gradient(110deg,#07080a 10%,#17191d 65%,#350b11);border-bottom:1px solid #a82b31}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 74% 70%,#c41d291e,transparent 47%);pointer-events:none;z-index:-1}
+.hero .logo{width:156px;height:156px;object-fit:contain;flex-shrink:0;border-radius:50%;filter:drop-shadow(0 0 15px #d221303a);border:1px solid #7e1d2a}
+.hero h1{font-size:clamp(28px,3.7vw,45px);max-width:610px;letter-spacing:-.04em;line-height:1.08;margin:10px 0 13px}
+.hero p{color:#e0e0e2;font-size:15px;max-width:480px;line-height:1.55}
+.hero .eyebrow{color:#ff727d;font-size:11px;letter-spacing:.14em}
+.hero-product{width:190px;flex:0 0 190px;align-self:stretch;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;background:linear-gradient(160deg,#ffffff0e,#ffffff03);border:1px solid #ffffff1a;border-radius:18px;padding:12px}
+.hero-product img{height:195px;width:100%;object-fit:contain;border-radius:12px}
+.hero-product span{font-size:10px;color:#e8e8e9;text-align:center;line-height:1.35}
+.wrap{max-width:1050px;margin:27px auto;padding:0 18px 55px}
+.brand-intro{margin:0 0 25px}.brand-head{margin:0 0 17px}.brand-head h2{font-size:clamp(24px,3vw,35px);letter-spacing:-.035em}.brand-head p{color:#d3d3d7}
+.ranges{gap:16px}.range{position:relative;min-height:167px;overflow:hidden;padding:22px 24px;border:1px solid #ffffff24;background:linear-gradient(125deg,#292b31,#17191c);box-shadow:0 12px 25px #0002}
+.range:not(.serenity){border-color:#9f2c35;background:linear-gradient(125deg,#7e0d1b,#b41325 58%,#590e17)}
+.range.serenity{padding-right:158px;background:linear-gradient(120deg,#292b31,#16181b);border-color:#7c6668}
+.range-photo{position:absolute;right:10px;bottom:8px;height:148px;width:135px;object-fit:contain;border-radius:11px}
+.range h3{font-size:21px}.range p{max-width:350px}.range-tag{color:#ffafb6}.maker{color:#c4c5c9;font-size:12px;margin-top:16px}
+.card{padding:clamp(20px,4vw,38px);border-radius:23px;box-shadow:0 22px 65px #0006;border:1px solid #ffffff38}
+.card h2{font-size:clamp(24px,3.3vw,35px);letter-spacing:-.035em}.sub{font-size:15px}
+.progress{gap:9px;margin-bottom:29px}.progress div{height:9px;background:#ececef}.progress div.on{background:linear-gradient(90deg,#aa0618,#ed172b)}
+.choice{position:relative;border:1.5px solid #e0e1e5;border-radius:15px;padding:17px 16px;min-height:78px;background:#fbfbfc;box-shadow:0 3px 7px #00000008;transition:transform .16s,border-color .16s,box-shadow .16s}
+.choice:hover{transform:translateY(-2px);box-shadow:0 8px 20px #00000013}.choice.selected{border:2px solid #df1023;background:#fff7f8;box-shadow:0 0 0 3px #df102313}
+.choice.selected::after{content:'✓';position:absolute;top:9px;right:10px;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;background:#d90b20;color:white;font-size:13px;font-weight:900}
+.choice b{font-size:15px;padding-right:12px}.choice small{font-size:12px;line-height:1.4}
+.field{margin:21px 0}.field>label,.field>strong{font-size:14px}
+.inputs input{min-height:52px;background:#fcfcfd;border:1.5px solid #d8d9dd;border-radius:12px;font-size:16px}
+.btn{border-radius:12px;padding:15px 24px}.primary{background:linear-gradient(110deg,#b00016,#e50d27);box-shadow:0 8px 18px #c00c2730}.primary:hover{filter:brightness(1.07)}
+.upload{background:#fafafb;border:2px dashed #adb2bb;padding:24px}.summary{background:#f5f6f8;border:1px solid #e8e9eb;line-height:1.95}.budget{background:linear-gradient(120deg,#fff6f5,#fff);border-color:#eec4c7}
+.footer{color:#bfc1c6;padding:8px 15px 25px}
+@media(max-width:850px){.hero-product{display:none}.hero{min-height:225px}.hero .logo{width:120px;height:120px}.range.serenity{padding-right:140px}.range-photo{width:115px}}
+@media(max-width:620px){.hero{padding:18px 16px;gap:13px;min-height:unset}.hero .logo{width:84px;height:84px}.hero h1{font-size:26px}.hero p{font-size:12px}.wrap{margin:16px auto;padding:0 12px 32px}.card{padding:20px 16px;border-radius:17px}.ranges{grid-template-columns:1fr;gap:10px}.range{min-height:124px;padding:17px}.range.serenity{padding-right:125px}.range-photo{height:118px;width:100px}.choice{min-height:75px;padding:15px 12px}.choices.triple{grid-template-columns:repeat(2,minmax(0,1fr))}.inputs{grid-template-columns:1fr}.btn{padding:13px 15px}.brand-head h2{font-size:25px}}
+input[data-input="rdc"]:disabled{background:#eef0f3!important;color:#4b5563!important;cursor:not-allowed;opacity:1;border-color:#d7dce3!important}</style><style>
+.power-panel{margin:20px 0;padding:20px;border:1px solid #e9d5d7;border-radius:18px;background:linear-gradient(135deg,#fff8f8,#fff)}
+.power-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.power-head span{font-weight:800;color:#24272c}.power-head strong{font-size:clamp(22px,4vw,30px);color:#ce0920}.power-panel p{font-size:14px;line-height:1.55;color:#414850}.power-panel select{width:100%;max-width:460px;padding:13px 15px;border:1px solid #cfd2d6;border-radius:11px;background:white;font-size:16px;color:#24272c}.power-panel small{display:block;margin-top:9px;color:#616770;line-height:1.5}
+</style><style>
+body{background:#f3f4f6}
+.accueil-v4{max-width:1140px;min-height:630px;margin:30px auto 24px;border-radius:24px;overflow:hidden;background:#111318;color:#fff;display:grid;grid-template-columns:55% 45%;box-shadow:0 20px 65px #0003}
+.accueil-v4__contenu{padding:55px 40px 48px 58px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;z-index:1}
+.accueil-v4__logo{height:158px;width:158px;object-fit:contain;margin-bottom:36px;border-radius:50%}
+.accueil-v4 h1{font-size:clamp(42px,5vw,68px);line-height:1.04;letter-spacing:-.05em;margin:0 0 22px;font-weight:850}
+.accueil-v4 h1 span{color:#ff2034}
+.accueil-v4 p{font-size:clamp(17px,1.7vw,20px);line-height:1.55;color:#e1e2e5;max-width:440px;margin:0 0 36px}
+.accueil-v4__bouton{width:100%;max-width:440px;background:#e6001b;color:#fff;border:0;border-radius:12px;padding:21px 18px;font-size:19px;font-weight:800;cursor:pointer;box-shadow:0 10px 26px #e6001b44;display:flex;justify-content:center;gap:18px}
+.accueil-v4__bouton:hover{background:#fa102a}
+.accueil-v4__repere{align-self:center;max-width:440px;width:100%;text-align:center;margin-top:18px;color:#d1d2d5;font-size:14px}
+.accueil-v4__visuel{position:relative;min-height:630px;background:#2c2b2b}
+.accueil-v4__visuel:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111318 0%,transparent 35%)}
+.accueil-v4__visuel img{width:100%;height:100%;object-fit:cover;object-position:center;position:absolute;inset:0}
+#parcours-v4{max-width:920px;margin:25px auto}
+body.parcours-actif .accueil-v4{display:none}
+@media(max-width:700px){
+.accueil-v4{margin:0;border-radius:0;min-height:100svh;display:block;position:relative}
+.accueil-v4__contenu{position:relative;padding:34px 24px 44px;min-height:100svh;justify-content:center}
+.accueil-v4__logo{height:116px;width:116px;margin-bottom:35px}
+.accueil-v4 h1{font-size:clamp(39px,10vw,58px)}
+.accueil-v4 p{font-size:17px}
+.accueil-v4__visuel{position:absolute;inset:0;opacity:.25;min-height:unset}
+.accueil-v4__visuel:after{background:linear-gradient(90deg,#111318cc,#11131888)}
+.accueil-v4__bouton{font-size:16px;padding:19px 12px}
+}
+</style><style>
+#parcours-v4{max-width:1030px!important}
+#parcours-v4 .card{box-shadow:none}
+#parcours-v4 .choices-photo{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#parcours-v4 .choices-photo .choice{padding:0 0 14px;overflow:hidden;display:flex;flex-direction:column;align-items:stretch;text-align:center;min-height:150px;border-radius:12px}
+#parcours-v4 .choices-photo .choice b{font-size:14px;margin:12px 7px 0}
+#parcours-v4 .choices-photo .choice small{margin:5px 7px 0}
+#parcours-v4 .choice-photo{width:100%;height:125px;object-fit:cover;display:block;background:#f1f1f1}
+#parcours-v4 .choices-photo .choice:not(:has(img)){justify-content:center;padding:16px}
+#parcours-v4 .result-photo{display:flex;align-items:center;gap:16px;background:#16181b;color:#fff;border-radius:16px;overflow:hidden;margin:12px 0 22px}
+#parcours-v4 .result-photo img{width:170px;height:135px;object-fit:cover}
+#parcours-v4 .result-photo strong{font-size:22px;display:block}
+#parcours-v4 .result-photo span{display:block;color:#d7d7d7;font-size:13px;margin-top:7px}
+@media(max-width:650px){#parcours-v4 .choices-photo{grid-template-columns:repeat(2,minmax(0,1fr))}#parcours-v4 .choice-photo{height:110px}#parcours-v4 .result-photo img{width:110px;height:110px}#parcours-v4 .result-photo strong{font-size:17px}}
+</style><style>
+#parcours-v4 .choices-photo .choice-photo{height:175px;object-fit:cover;image-rendering:auto}
+#parcours-v4 .choices-photo .choice:has(.choice-photo){min-height:230px}
+#parcours-v4 input[readonly]{background:#f0f4f7;color:#394553}
+@media(max-width:650px){#parcours-v4 .choices-photo .choice-photo{height:125px}#parcours-v4 .choices-photo .choice:has(.choice-photo){min-height:185px}}
+</style><style id="interstoves-v44-polish">
+#parcours-v4{--red:#bc0928;--ink:#20252d;font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif}
+#parcours-v4 .step{letter-spacing:.085em;font-weight:850}
+#parcours-v4 h2{letter-spacing:-.045em;line-height:1.12}
+#parcours-v4 .choices-photo{gap:16px}
+#parcours-v4 .choices-photo .choice{background:#fff;border:1px solid #e2e3e6;border-radius:17px;box-shadow:0 8px 24px rgba(24,29,38,.055);transition:box-shadow .18s,transform .18s,border-color .18s;overflow:hidden}
+#parcours-v4 .choices-photo .choice:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(24,29,38,.13)}
+#parcours-v4 .choices-photo .choice.selected{border:2px solid #c7092c;box-shadow:0 0 0 3px rgba(199,9,44,.08)}
+#parcours-v4 .choices-photo .choice-photo{height:185px;width:100%;object-fit:cover;display:block;background:#f3f0ec}
+#parcours-v4 .choices-photo .choice b{font-size:16px;margin:15px 8px 0}
+#parcours-v4 .choices-photo .choice small{font-size:13px;margin:6px 10px 4px;color:#626e7c}
+#parcours-v4 input:focus-visible,#parcours-v4 button:focus-visible{outline:3px solid rgba(188,9,40,.4);outline-offset:3px}
+#parcours-v4 input[readonly]{background:#f2f5f7;border-color:#d6dde3}
+@media(max-width:700px){#parcours-v4 .choices-photo{gap:10px}#parcours-v4 .choices-photo .choice-photo{height:120px}#parcours-v4 .choices-photo .choice b{font-size:14px}#parcours-v4 .choices-photo .choice small{font-size:12px}}
+</style><style>
+/* V4.7 : finition de la synthèse, sans changement des calculs */
+#parcours-v4 .result-photo{background:linear-gradient(115deg,#17191e,#303035);border:1px solid #292b31;box-shadow:0 14px 34px #17191e22;min-height:145px}
+#parcours-v4 .result-photo img{width:185px;height:145px;object-fit:cover}
+#parcours-v4 .result-photo strong{font-size:clamp(20px,2.7vw,30px);line-height:1.15}
+#parcours-v4 .summary{background:#f7f8fa;border:1px solid #e5e7eb;border-radius:18px;padding:24px;line-height:2.05;font-size:16px}
+#parcours-v4 .power-panel{border:1px solid #efc8cc;border-radius:20px;padding:25px;background:linear-gradient(125deg,#fff8f8,#fff);margin:22px 0}
+#parcours-v4 .power-head{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+#parcours-v4 .power-head strong{font-size:clamp(27px,4vw,42px);font-weight:850;color:#dc001c;letter-spacing:-.04em}
+#parcours-v4 .budget{background:linear-gradient(130deg,#fffaf7,#fff);border:1px solid #eccdc8;border-left:5px solid #e40021;border-radius:20px;padding:27px}
+#parcours-v4 .budget strong{font-size:clamp(28px,4vw,42px);color:#1e222b;letter-spacing:-.04em;display:block;margin:8px 0 12px}
+#parcours-v4 .budget p{font-size:15px;line-height:1.65}
+#parcours-v4 .conversion-title{margin:30px 0 12px;font-size:clamp(23px,3vw,30px)}
+#parcours-v4 .conversion-intro{color:#596271;font-size:16px;line-height:1.65;margin-bottom:18px}
+#parcours-v4 #mail{background:#e40021;color:#fff;border:1px solid #e40021;padding:17px 24px;font-weight:800;border-radius:13px;box-shadow:0 9px 22px #e4002126;margin-top:12px}
+#parcours-v4 #mail:hover{background:#b9001b}
+#parcours-v4 #copy{margin-top:12px}
+@media(max-width:650px){#parcours-v4 .result-photo img{width:115px;height:125px}#parcours-v4 .summary{padding:17px;font-size:14px}#parcours-v4 .power-panel,#parcours-v4 .budget{padding:19px}#parcours-v4 #mail{width:100%}}
+<style id="interstoves-v5-pro">
+/* INTERSTOVES08 V5 PRO — couche de finition légère, sans dépendances */
+:root{--brand:#d9142b;--ink:#20232a;--muted:#66717e;--line:#e6e7eb;--soft:#f7f7f9}
+html{scroll-behavior:smooth}body{background:radial-gradient(ellipse at 50% 0%,#313036 0%,#151619 46%,#111215 100%);color:var(--ink);-webkit-font-smoothing:antialiased}
+.accueil-v4{box-shadow:0 25px 70px #0005}
+.accueil-v4__contenu h1{letter-spacing:-.048em;line-height:1.04}
+.accueil-v4__bouton,.btn.primary{background:linear-gradient(120deg,#d90d29,#a90721);box-shadow:0 10px 22px #b70c2a35;transition:transform .16s,box-shadow .16s,filter .16s}
+.accueil-v4__bouton:hover,.btn.primary:hover{transform:translateY(-2px);box-shadow:0 16px 28px #b70c2a40;filter:brightness(1.06)}
+.wrap{max-width:980px;margin:30px auto 0;padding:0 18px 58px}
+#parcours-v4.card{padding:clamp(22px,4.5vw,48px);border:1px solid #ffffff8c;border-radius:24px;box-shadow:0 22px 75px #0005;background:linear-gradient(180deg,#fff 0%,#fefefe 72%,#fafafb 100%)}
+#parcours-v4 .progress{margin-bottom:30px;gap:8px}
+#parcours-v4 .progress div{height:6px;border-radius:99px}
+#parcours-v4 .progress div.on{background:linear-gradient(90deg,#ba1024,#ed3145)}
+#parcours-v4 .step{font-size:11px;letter-spacing:.16em;color:#a20d24}
+#parcours-v4 h2{letter-spacing:-.038em;font-size:clamp(27px,3.5vw,38px);line-height:1.15;margin:10px 0 12px}
+#parcours-v4 h3{letter-spacing:-.025em;font-size:clamp(20px,2.6vw,26px);margin-top:32px}
+#parcours-v4 .sub{font-size:15px;line-height:1.7;margin-bottom:28px}
+#parcours-v4 .field{margin:22px 0}
+#parcours-v4 .field>label,#parcours-v4 .field>strong{font-size:14px;color:#252832;margin-bottom:12px}
+#parcours-v4 .choices{gap:13px}
+#parcours-v4 .choice{border:1.5px solid #e1e3e7;border-radius:16px;background:#fff;padding:15px;min-height:75px;box-shadow:0 3px 12px #17192308;transition:border-color .15s,box-shadow .15s,transform .15s}
+#parcours-v4 .choice:hover{border-color:#c8a1a8;box-shadow:0 9px 25px #20202013;transform:translateY(-2px)}
+#parcours-v4 .choice.selected{border:2px solid var(--brand);background:#fff8f8;box-shadow:0 0 0 3px #e31d3414,0 8px 18px #1c1b1b0a}
+#parcours-v4 .choice b{font-size:14px;color:#292a30}
+#parcours-v4 .choice small{font-size:12px;line-height:1.5}
+#parcours-v4 .choice-photo{background:#f5f6f7;border-radius:10px;object-fit:contain;padding:8px}
+#parcours-v4 input,#parcours-v4 select,#parcours-v4 textarea{background:#fff;border:1.5px solid #d8dbe1;border-radius:12px;padding:13px 14px;font-size:15px;transition:border-color .15s,box-shadow .15s}
+#parcours-v4 input:focus,#parcours-v4 select:focus{border-color:#c30c28;outline:none;box-shadow:0 0 0 3px #e91a3b18}
+#parcours-v4 input:disabled{background:#f1f2f4;color:#9298a1;border-color:#e3e5e8;cursor:not-allowed}
+#parcours-v4 .actions{padding-top:22px;border-top:1px solid #eff0f2;margin-top:32px}
+#parcours-v4 .btn{border-radius:12px;padding:15px 22px;min-height:50px}
+#parcours-v4 .btn.secondary{background:#f0f1f4;color:#282b32}
+#parcours-v4 .summary{border-radius:17px;background:#f7f8fa;border:1px solid #e8eaee;padding:24px;line-height:2.05;font-size:14px}
+#parcours-v4 .power-panel{border-radius:18px;box-shadow:0 7px 24px #15151b0b}
+#parcours-v4 .budget{border-radius:18px;box-shadow:0 7px 24px #15151b0b}
+#parcours-v4 .result-photo{min-height:180px;border-radius:18px;background:linear-gradient(120deg,#191a1d,#303036);box-shadow:0 14px 35px #16171b22}
+#parcours-v4 .result-photo img{width:220px;height:180px;object-fit:cover;object-position:center 58%}
+#parcours-v4 .result-photo strong{font-size:clamp(22px,3vw,32px)}
+#parcours-v4 .notice{border-radius:10px;line-height:1.65}
+#parcours-v4 .conversion-title{padding-top:14px;border-top:1px solid #eceef1}
+#parcours-v4 #mail{background:linear-gradient(110deg,#df1230,#a90923);color:white;box-shadow:0 10px 20px #b60c2930;padding:15px 24px}
+.footer{color:#bfc1c7;font-size:12px;line-height:1.6;text-align:center;padding:12px 18px 32px}
+@media(max-width:650px){.wrap{margin-top:14px;padding:0 11px 34px}#parcours-v4.card{border-radius:18px;padding:22px 16px}#parcours-v4 .choices{gap:9px}#parcours-v4 .choice{padding:11px;min-height:72px}#parcours-v4 .choice-photo{height:96px;padding:5px}#parcours-v4 .result-photo img{width:120px;height:150px}#parcours-v4 .result-photo{min-height:150px}#parcours-v4 .summary{padding:16px}#parcours-v4 .inputs{gap:10px}#parcours-v4 .btn{padding:12px 16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style><style id="interstoves-v51-visual-only">
+/* V5.1 : habillage visuel exclusivement — aucune modification des fonctions JavaScript. */
+body{background:#e9edf1!important;color:#191d24}
+#parcours-v4{max-width:1120px!important;margin:22px auto 45px!important;padding:clamp(22px,3vw,38px)!important;border-radius:20px!important;border:1px solid #e4e7ed!important;box-shadow:0 18px 55px rgba(18,25,35,.11)!important;background:#fff}
+#parcours-v4 .progress{display:flex;gap:7px;margin-bottom:25px}
+#parcours-v4 .progress div{height:8px;border-radius:12px;background:#e4e6ea}
+#parcours-v4 .progress div.on{background:#e40022}
+#parcours-v4 .step{color:#b30822;font-size:12px;letter-spacing:.13em;margin-bottom:11px}
+#parcours-v4 h2{font-size:clamp(29px,3.8vw,43px)!important;font-weight:850;letter-spacing:-.05em;line-height:1.12;margin:8px 0 12px}
+#parcours-v4 .sub{color:#647081;font-size:16px;line-height:1.55;margin-bottom:26px}
+#parcours-v4 .field{margin:23px 0}
+#parcours-v4 .field>label{font-size:15px;font-weight:800;color:#20252b;margin-bottom:12px}
+#parcours-v4 .choices-photo{gap:14px!important}
+#parcours-v4 .choices-photo .choice{border:1.5px solid #e1e5eb!important;border-radius:13px!important;min-height:0!important;padding:0 0 14px!important;box-shadow:0 5px 15px rgba(21,30,40,.065)!important;background:#fff!important;overflow:hidden;transition:transform .15s,box-shadow .15s,border-color .15s}
+#parcours-v4 .choices-photo .choice.selected{border:2px solid #e00022!important;background:#fff!important;box-shadow:0 0 0 3px #e0002212!important}
+#parcours-v4 .choices-photo .choice:hover{transform:translateY(-2px);box-shadow:0 12px 25px #20283822!important}
+#parcours-v4 .choices-photo .choice-photo{height:190px!important;object-fit:cover!important;object-position:center!important;padding:0!important;margin:0!important;border-radius:0!important;background:#f2f4f6!important}
+#parcours-v4 .choices-photo .choice b{font-size:15px!important;margin:13px 8px 2px!important;color:#151b23}
+#parcours-v4 .choices-photo .choice small{font-size:12px!important;color:#647080!important}
+#parcours-v4 .choice.selected::after{background:#e00022!important;top:9px;right:9px;box-shadow:0 2px 6px #0003}
+#parcours-v4 .inputs input,#parcours-v4 input,#parcours-v4 select{border:1.5px solid #d5dce4;border-radius:9px;min-height:51px;background:#fbfcfe}
+#parcours-v4 input:focus-visible,#parcours-v4 button:focus-visible{outline:3px solid #e0002266;outline-offset:2px}
+#parcours-v4 .primary{background:#e00022!important;color:white!important;border-radius:9px!important;box-shadow:0 8px 17px #d4002422!important;padding:15px 25px;font-weight:800}
+#parcours-v4 .secondary{background:#edf0f3!important;border-radius:9px!important;color:#29313b!important}
+#parcours-v4 .summary{background:#f5f7f9!important;border:1px solid #e3e8ed;border-radius:13px!important;padding:22px!important}
+#parcours-v4 .budget,#parcours-v4 .power-panel{border-radius:14px!important}
+#parcours-v4 .result-photo{border-radius:14px!important;background:#1b1c21!important;min-height:160px!important}
+#parcours-v4 .result-photo img{height:160px!important;width:190px!important;object-fit:cover!important}
+#parcours-v4 .result-photo strong{font-size:clamp(21px,3vw,30px)!important}
+#parcours-v4 .upload{border-radius:12px!important;background:#f8fafc!important}
+@media(max-width:700px){#parcours-v4{margin:0 auto 20px!important;border-radius:0!important;padding:22px 15px!important}#parcours-v4 .choices-photo{gap:10px!important}#parcours-v4 .choices-photo .choice-photo{height:135px!important}#parcours-v4 .choices-photo .choice b{font-size:13px!important}#parcours-v4 .result-photo img{width:110px!important;height:130px!important}#parcours-v4 .result-photo{min-height:130px!important}}
+</style><style id="v52-images-only">
+#parcours-v4 .choices-photo .choice-photo{height:200px;object-fit:cover;object-position:center}
+#parcours-v4 .choices-photo .choice{background:#fff}
+#parcours-v4 .choices-photo .choice b{font-weight:800}
+@media(max-width:650px){#parcours-v4 .choices-photo .choice-photo{height:145px}}
+</style><style id="v55-contact-only">#parcours-v4 .contact-choice{margin:26px 0 20px;padding:20px 22px;border:1px solid #e5e8ed;border-radius:14px;background:#f8f9fb}#parcours-v4 .contact-choice h3{margin:0 0 8px}#parcours-v4 .contact-choice p{margin:0 0 14px;color:#566273}#parcours-v4 .contact-radio{display:flex;align-items:flex-start;gap:12px;margin:9px 0;padding:12px 14px;border:1px solid #dbe0e7;border-radius:10px;background:#fff;cursor:pointer;font-weight:600}#parcours-v4 .contact-radio input{width:18px;height:18px;min-height:18px;accent-color:#e00022;flex-shrink:0}#parcours-v4 .callback-hint{margin:12px 0 0!important;color:#4c5868!important;font-size:14px}</style><style id="v56-accueil">
+body:not(.parcours-actif){background:#071522}
+.accueil-v56{display:block!important;max-width:1536px;min-height:0!important;margin:0 auto 20px!important;border-radius:0!important;background:#071522!important;box-shadow:none!important;color:#fff!important;overflow:hidden}
+.v56-hero{position:relative;min-height:635px;display:flex;align-items:center;background:#081d2d;overflow:hidden}
+.v56-hero-photo{position:absolute;inset:0 0 0 46%;background-image:url('images/visuel_0eb94b979899.webp');background-position:center;background-size:cover}
+.v56-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,#071c2e 0%,#071c2efc 35%,#071c2ed0 51%,#071c2e16 78%)}
+.v56-content{position:relative;z-index:1;width:min(770px,70%);padding:36px 38px 38px 6%;box-sizing:border-box}
+.v56-brand{display:flex;align-items:center;gap:18px;margin-bottom:24px}.v56-brand img{width:98px;height:98px;border-radius:50%;object-fit:cover;border:2px solid #ffffff33}.v56-brand strong{font-size:clamp(25px,3.4vw,48px);letter-spacing:.015em;color:#fff;display:block;font-weight:900}.v56-brand small{display:block;color:#ffbe55;font-size:16px;font-style:italic;letter-spacing:.07em}
+.accueil-v56 h1{font-size:clamp(35px,4vw,59px)!important;line-height:1.06!important;letter-spacing:-.04em!important;font-weight:850!important;margin:0 0 12px!important}.accueil-v56 h1 em{color:#f8b447;font-style:normal}
+.accueil-v56 .v56-content>p{font-size:clamp(16px,1.6vw,21px)!important;color:#f1f4f7!important;max-width:660px!important;margin:0 0 18px!important;line-height:1.45!important}
+.v56-benefits{display:flex;justify-content:space-between;gap:12px;margin:14px 0 22px;max-width:635px}.v56-benefits span{color:#f3b347;font-size:30px;text-align:center;line-height:1.1;min-width:0;flex:1}.v56-benefits small{display:block;font-size:12px;color:white;line-height:1.25;margin-top:6px}
+.accueil-v56 .accueil-v4__bouton{background:linear-gradient(120deg,#ffc25d,#ec9b28)!important;color:#111!important;border-radius:30px!important;max-width:630px!important;min-height:62px;justify-content:space-between;padding:16px 30px!important;font-size:22px!important;box-shadow:none!important}
+.v56-catalogue{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:630px;box-sizing:border-box;margin-top:12px;padding:14px 27px;border:1.5px solid #e9ad4a;border-radius:30px;color:white!important;text-decoration:none!important;font-size:17px;font-weight:700;background:#08162499}.v56-catalogue:hover{background:#d9993033}.v56-note{font-size:12px;color:#d9e0e6;margin-top:14px;text-align:center;max-width:630px}
+.v56-showcase{padding:20px 4.2% 30px;background:linear-gradient(#0a1b2a,#08121e)}.v56-showcase-title{font-size:clamp(22px,2.3vw,31px);font-weight:800;margin-bottom:18px}.v56-showcase-title em{font-style:normal;color:#f3ae42}.v56-carousel{display:flex;gap:12px;align-items:center}.v56-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:15px;flex:1}.v56-track::-webkit-scrollbar{display:none}.v56-product{flex:0 0 calc((100% - 30px)/3);min-width:178px;position:relative;display:flex;flex-direction:column;overflow:hidden;scroll-snap-align:start;background:#2a2b2f;border:1px solid #ffffff33;border-radius:12px;text-decoration:none!important;color:white!important}.v56-product img{width:100%;height:auto;aspect-ratio:772 / 660;object-fit:contain;object-position:center;display:block;background:#24282d}.v56-product strong{font-size:16px;padding:12px 10px 0;text-align:center;color:white}.v56-product small{font-size:13px;padding:3px 8px 12px;text-align:center;color:#e5e5e5}.v56-warranty{position:absolute;top:9px;right:8px;border:1px solid #ffcd63;background:#17130c;color:#ffcd63;padding:5px;border-radius:30px;font-size:10px;font-weight:800}.v56-arrow{flex:0 0 36px;height:36px;border:1px solid #eab05a;background:#0003;color:#fff;border-radius:50%;font-size:27px;cursor:pointer}.v56-disclaimer{color:#aab4bd;text-align:center;font-size:11px;margin-top:14px}
+body.parcours-actif .accueil-v56{display:none!important}
+@media(max-width:800px){.v56-hero{min-height:0}.v56-hero-photo{inset:0;opacity:.42}.v56-hero-shade{background:linear-gradient(90deg,#071c2efa,#071c2edc)}.v56-content{width:100%;padding:28px 22px 38px}.v56-brand img{width:70px;height:70px}.v56-brand strong{font-size:clamp(22px,5.5vw,36px)}.v56-brand small{font-size:12px}.v56-benefits{gap:5px}.v56-benefits small{font-size:10px}.accueil-v56 .accueil-v4__bouton{font-size:17px!important}.v56-catalogue{font-size:14px}.v56-showcase{padding:24px 12px}.v56-product{flex-basis:195px}.v56-arrow{flex-basis:28px;width:28px;height:28px}}
+</style>
+<style id="v56-finitions">
+.accueil-v56 .v56-hero{min-height:625px}
+.accueil-v56 .v56-hero-photo{background-position:center center}
+.accueil-v56 .v56-content{width:min(830px,71%);padding-top:40px;padding-bottom:42px}
+.accueil-v56 .v56-brand img{width:110px;height:110px;object-fit:contain;background:#071522;flex-shrink:0;box-shadow:0 4px 25px #0008}
+.accueil-v56 .v56-brand strong{font-size:clamp(27px,3.2vw,45px)}
+.accueil-v56 .v56-benefits span{font-family:inherit}
+.accueil-v56 .v56-track{scroll-behavior:smooth;scroll-padding-left:0;min-width:0}
+.accueil-v56 .v56-product{flex:0 0 calc((100% - 30px)/3);min-width:0;transition:transform .2s ease,border-color .2s ease}
+.accueil-v56 .v56-product:hover{border-color:#f3b347;transform:translateY(-2px)}
+.accueil-v56 .v56-product img{height:205px;object-fit:cover;object-position:center top}
+.accueil-v56 .v56-arrow{flex-shrink:0;transition:background .2s ease}
+.accueil-v56 .v56-arrow:hover{background:#efac3c;color:#071522}
+.accueil-v56 .v56-showcase{padding-bottom:35px}
+@media(max-width:800px){.accueil-v56 .v56-content{width:100%;padding:25px 22px 35px}.accueil-v56 .v56-brand img{width:76px;height:76px}.accueil-v56 .v56-product{flex-basis:100%;min-width:0}.accueil-v56 .v56-product img{height:200px}.accueil-v56 .v56-brand strong{font-size:clamp(20px,5vw,30px)}}
+</style>
+<style>
+/* V5.7 — harmonisation esthétique exclusivement : CSS, aucune modification JS/HTML */
+body.parcours-actif{background:linear-gradient(155deg,#061725 0%,#102d43 43%,#071725 100%) fixed!important;color:#192b39}
+body.parcours-actif .wrap{max-width:1200px;margin:32px auto 14px;padding:0 18px 36px}
+#parcours-v4{--red:#f0aa3e;--ink:#142a3c;max-width:1120px!important;background:linear-gradient(160deg,#fff 0%,#f5f9fc 100%)!important;border:1px solid #cfdae4!important;border-top:5px solid #f0ae47!important;border-radius:22px!important;box-shadow:0 24px 68px #0005!important;padding:clamp(22px,3.2vw,42px)!important}
+#parcours-v4 .progress{gap:10px;margin-bottom:28px}
+#parcours-v4 .progress div{height:9px;background:#dfe7ee;border-radius:20px}
+#parcours-v4 .progress div.on{background:linear-gradient(90deg,#d68c22,#ffc561);box-shadow:0 2px 8px #c18a3433}
+#parcours-v4 .step{color:#b77717!important;font-weight:850;letter-spacing:.12em}
+#parcours-v4 h2{color:#0b2438!important}
+#parcours-v4 h3{color:#16334a}
+#parcours-v4 .sub,#parcours-v4 .hint{color:#5a7080}
+#parcours-v4 .field>label,#parcours-v4 .field>strong{color:#193347}
+#parcours-v4 .choice{border-color:#d8e2ea;background:#fff;box-shadow:0 3px 11px #09263c0a}
+#parcours-v4 .choice:hover{border-color:#e0b466;box-shadow:0 9px 22px #12324a20}
+#parcours-v4 .choice.selected{border:2px solid #d89934!important;background:#fffaf0!important;box-shadow:0 0 0 3px #f2ae3e25!important}
+#parcours-v4 .choice.selected::after{background:#e9a338!important;color:#11283b!important}
+#parcours-v4 .choices-photo .choice{border-color:#dce6ed!important;background:#fff!important}
+#parcours-v4 .choices-photo .choice.selected{border:2px solid #e3a33b!important;background:#fffaf0!important;box-shadow:0 0 0 3px #e9a33822!important}
+#parcours-v4 .choices-photo .choice-photo{background:#eef3f6!important}
+#parcours-v4 .choices-photo .choice b{color:#17344b!important}
+#parcours-v4 .inputs input,#parcours-v4 input,#parcours-v4 select,#parcours-v4 textarea{background:#fff;border-color:#cddce6;color:#193245}
+#parcours-v4 input:focus-visible,#parcours-v4 select:focus-visible,#parcours-v4 textarea:focus-visible,#parcours-v4 button:focus-visible{outline:3px solid #f3b44b88!important;outline-offset:2px}
+#parcours-v4 .primary{background:linear-gradient(115deg,#ffc35c,#eba12d)!important;color:#092135!important;border-radius:13px!important;box-shadow:0 8px 22px #b7823233!important}
+#parcours-v4 .secondary{background:#e8f0f6!important;color:#18384d!important;border:1px solid #d1e0e9!important;border-radius:13px!important}
+#parcours-v4 .summary{background:#eaf2f8!important;border-color:#d5e2ec!important;color:#1b384e}
+#parcours-v4 .notice{background:#fff7e9;border-left-color:#e9a63d;color:#3c4650;border-radius:0 10px 10px 0}
+#parcours-v4 .budget,#parcours-v4 .power-panel{background:linear-gradient(135deg,#fff9ed,#fff)!important;border:1px solid #e8d6b9!important;border-left:5px solid #eaa53c!important;border-radius:16px!important;box-shadow:0 8px 24px #2d40500c}
+#parcours-v4 .budget-label,#parcours-v4 .power-head,#parcours-v4 .power-panel .step{color:#a86a17!important}
+#parcours-v4 .budget strong,#parcours-v4 .power-panel strong{color:#172f43}
+#parcours-v4 .result-photo{background:linear-gradient(125deg,#081b2c,#1d4056)!important;border:1px solid #38536a!important}
+#parcours-v4 .upload{background:#f0f6fa!important;border-color:#aebfcf!important}
+#parcours-v4 .contact-choice{background:#edf4f8!important;border-color:#d6e3eb!important}
+#parcours-v4 .contact-radio{border-color:#cddde8!important;background:#fff!important}
+#parcours-v4 .contact-radio input{accent-color:#d99b32!important}
+body.parcours-actif .footer{color:#c6d8e6}
+@media(max-width:700px){body.parcours-actif .wrap{padding:0 10px 18px;margin:12px auto}#parcours-v4{border-radius:17px!important;margin:0 auto 12px!important;padding:22px 16px!important}#parcours-v4 .actions{gap:8px}#parcours-v4 .btn{padding:13px 14px}}
+
+/* Finition accueil : macaron garantie placé au-dessus et à droite du poêle, sans masquer l'appareil. */
+.accueil-v56 .v57-hero-guarantee{position:absolute;z-index:3;top:23%;right:8%;width:110px;height:110px;border-radius:50%;border:3px solid #e9bd5a;background:radial-gradient(circle at 35% 25%,#353027,#090c12 76%);color:#f8d67b;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 8px 26px #0009, inset 0 0 0 4px #14110b;pointer-events:none;line-height:1.05;transform:rotate(7deg)}
+.accueil-v56 .v57-hero-guarantee span{font-size:12px;letter-spacing:.8px;font-weight:800}
+.accueil-v56 .v57-hero-guarantee strong{font-size:44px;line-height:.96;color:#fff0c4}
+.accueil-v56 .v57-hero-guarantee small{font-size:15px;font-weight:900}
+@media(max-width:800px){.accueil-v56 .v57-hero-guarantee{top:12px;right:12px;width:72px;height:72px;border-width:2px;opacity:.94}.accueil-v56 .v57-hero-guarantee span{font-size:8px}.accueil-v56 .v57-hero-guarantee strong{font-size:28px}.accueil-v56 .v57-hero-guarantee small{font-size:10px}}
+/* Médaillon d'origine, image détourée : aucun impact sur le parcours. */
+.accueil-v56 .v57-hero-guarantee-original{position:absolute;z-index:3;top:18%;right:6%;width:125px;height:auto;filter:drop-shadow(0 7px 13px #0009);pointer-events:none}
+@media(max-width:800px){.accueil-v56 .v57-hero-guarantee-original{top:14px;right:14px;width:82px}}
+</style><style>
+/* V5.8 — finition ergonomique responsive. Aucun changement des calculs ni du parcours. */
+:root{--v58-ink:#152a3c;--v58-accent:#ef9b45;--v58-ring:#f6b567}
+html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:inherit}
+button{touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--v58-ring)!important;outline-offset:3px!important}
+.accueil-v56{box-shadow:0 25px 70px #07162932}
+.accueil-v56 h1{text-wrap:balance}
+.accueil-v56 p{line-height:1.65}
+#demarrer-v4{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+#demarrer-v4:hover{transform:translateY(-2px);filter:brightness(1.08)}
+#demarrer-v4:active{transform:translateY(0)}
+.v56-product{transition:box-shadow .2s ease,border-color .2s ease,transform .2s ease}
+.v56-product:hover{transform:translateY(-3px);box-shadow:0 14px 32px #07162927}
+.v56-arrow{transition:background .18s ease,transform .18s ease}
+.v56-arrow:hover{transform:scale(1.05)}
+#parcours-v4 .card{box-shadow:0 24px 65px #0b1f3230}
+#parcours-v4 .step{font-size:13px;letter-spacing:.085em}
+#parcours-v4 .sub{line-height:1.65;max-width:760px}
+#parcours-v4 .field>label,#parcours-v4 .field>strong{line-height:1.45}
+#parcours-v4 .choice{transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease,background .16s ease}
+#parcours-v4 .choice:not(.selected):hover{border-color:#dd9c54;box-shadow:0 7px 20px #102d4717}
+#parcours-v4 .choice.selected{box-shadow:0 0 0 3px #f2ae5e2a}
+#parcours-v4 .choice small{line-height:1.5}
+#parcours-v4 input:not([type=radio]):not([type=file]),#parcours-v4 select,#parcours-v4 textarea{font-size:16px;transition:border-color .15s ease,box-shadow .15s ease}
+#parcours-v4 input:not([type=radio]):not([type=file]):focus,#parcours-v4 select:focus{border-color:#d89040;box-shadow:0 0 0 4px #f3b76d28}
+#parcours-v4 input::placeholder{color:#778493;opacity:1}
+#parcours-v4 .hint{line-height:1.65}
+#parcours-v4 .summary{line-height:2.05;overflow-wrap:anywhere}
+#parcours-v4 .budget,#parcours-v4 .power-panel{box-shadow:0 6px 25px #0e30400c}
+#parcours-v4 .notice{border-radius:0 10px 10px 0;line-height:1.6}
+#parcours-v4 .upload{transition:border-color .18s ease,background .18s ease}
+#parcours-v4 .upload:hover{border-color:#d49a53;background:#fffaf3}
+#parcours-v4 .btn{min-height:50px;transition:transform .15s ease,filter .15s ease,box-shadow .15s ease}
+#parcours-v4 .btn:not(:disabled):hover{transform:translateY(-1px)}
+#parcours-v4 .btn:not(:disabled):active{transform:translateY(0)}
+#parcours-v4 .contact-radio{cursor:pointer}
+@media(max-width:700px){
+ .accueil-v56{margin-top:0;border-radius:0 0 20px 20px}
+ #parcours-v4 .card{border-radius:17px}
+ #parcours-v4 .choices{gap:10px}
+ #parcours-v4 .choice{min-height:78px}
+ #parcours-v4 .actions{position:sticky;bottom:0;z-index:20;background:linear-gradient(to bottom,#ffffffed,#fff 35%);padding:13px 0 max(13px,env(safe-area-inset-bottom));margin-top:20px;border-top:1px solid #e7edf2;box-shadow:0 -8px 20px #fff9}
+ #parcours-v4 .actions .btn{min-width:120px;min-height:52px}
+ #parcours-v4 .inputs{gap:9px}
+ #parcours-v4 .field{margin:17px 0}
+ #parcours-v4 .summary{font-size:14px;line-height:1.9}
+ #parcours-v4 .budget{padding:18px}
+ #parcours-v4 .upload{padding:16px 12px}
+ #parcours-v4 input[type=file]{font-size:13px}
+}
+@media(max-width:390px){#parcours-v4 .choices.triple{grid-template-columns:1fr 1fr}#parcours-v4 .choice{padding:12px 9px}#parcours-v4 .choice b{font-size:14px}#parcours-v4 .actions .btn{min-width:105px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media print{body{background:white!important}.accueil-v56,.hero,.footer,.actions,.btn{display:none!important}#parcours-v4{display:block!important}.card{box-shadow:none!important;border:0!important}}
+</style></head><body><header class="accueil-v4 accueil-v56" id="accueil-v4">
+  <section class="v56-hero"><div class="v56-hero-photo" aria-hidden="true"></div><div class="v56-hero-shade"></div><img class="v57-hero-guarantee-original" src="images/garantie_5_ans_noir_or.png" alt="Garantie 5 ans – modèle présenté"/>
+  <div class="v56-content"><div class="v56-brand"><img src="images/logo_interstoves08_officiel.png" alt="Logo INTERSTOVES08 Partenaire officiel"/><div><strong>INTERSTOVES08</strong><small>Le chauffage en toute Sérénité</small></div></div>
+  <h1>Quel poêle <em>le mieux adapté</em><br>à ma maison ?</h1>
+  <p>En quelques clics, estimez vos besoins et découvrez la puissance de poêle adaptée à votre logement.</p>
+  <div class="v56-benefits"><span>♧ <small>Des solutions<br>économiques</small></span><span>⌂ <small>Un confort<br>durable</small></span><span>♧ <small>Un choix<br>écologique</small></span><span>♧ <small>Un expert de proximité<br>dans les Ardennes</small></span></div>
+  <button type="button" id="demarrer-v4" class="accueil-v4__bouton">Commencer ma simulation <b>→</b></button>
+  <a class="v56-catalogue" href="https://interstoves08.fr/" target="_blank" rel="noopener noreferrer">Découvrir nos gammes de poêles et inserts <b>→</b></a>
+  <div class="v56-note">Gratuit · Sans engagement · Estimation indicative</div></div></section>
+  <section class="v56-showcase"><div class="v56-showcase-title">Découvrez nos gammes <em>de poêles et inserts</em></div>
+  <div class="v56-carousel"><button class="v56-arrow" type="button" id="v56-prev" aria-label="Produits précédents">‹</button><div class="v56-track" id="v56-track">
+  <a href="https://interstoves08.fr/" target="_blank" rel="noopener noreferrer" class="v56-product"><img src="images/catalogue_granules.webp" alt="UMBERTO 9, photographie extraite du catalogue INTERSTOVES"><strong>Poêles à granulés</strong><small>Gamme Confort</small></a>
+  <a href="https://interstoves08.fr/" target="_blank" rel="noopener noreferrer" class="v56-product"><img src="images/catalogue_serenite.webp" alt="PADOVA, photographie extraite du catalogue INTERSTOVES"><span class="v56-warranty">GARANTIE 5 ANS</span><strong>Poêles à granulés</strong><small>Gamme Sérénité</small></a>
+  <a href="https://interstoves08.fr/" target="_blank" rel="noopener noreferrer" class="v56-product"><img src="images/catalogue_bois.webp" alt="VICTORIA, photographie extraite du catalogue INTERSTOVES"><strong>Poêles à bois</strong><small>Chaleur authentique</small></a>
+  <a href="https://interstoves08.fr/" target="_blank" rel="noopener noreferrer" class="v56-product"><img src="images/catalogue_insert.webp" alt="BIANCA, photographie extraite du catalogue INTERSTOVES"><strong>Inserts</strong><small>Bois et granulés</small></a>
+  <a href="https://interstoves08.fr/" target="_blank" rel="noopener noreferrer" class="v56-product"><img src="images/catalogue_chaudiere.webp" alt="EDA, photographie extraite du catalogue INTERSTOVES"><strong>Chaudières</strong><small>Solutions de chauffage</small></a>
+  </div><button class="v56-arrow" type="button" id="v56-next" aria-label="Produits suivants">›</button></div>
+  <div class="v56-disclaimer">Photographies originales extraites du catalogue INTERSTOVES · Accès au site INTERSTOVES08 dans un nouvel onglet</div></section>
+</header><main class="wrap"><div class="card" id="parcours-v4" style="display:none"><div class="progress" id="progress"></div><div id="body"></div><div class="actions"><button class="btn secondary" id="back">← Précédent</button><button class="btn primary" id="next">Suivant →</button></div></div></main><footer class="footer">INTERSTOVES08 · Le chauffage en toute Sérénité · Prototype de démonstration : aucune donnée n'est transmise</footer><script>
+const state={type:'',levels:'',total:'',rdc:'',isolation:'',layout:'',use:'',flue:'',height:'inconnu',room:'',photos:[],finance:'indecis',powerWish:'avis',zip:'',city:'',name:'',email:'',phone:'',callback:'non'};let step=0;const steps=['Ma maison','Mon chauffage','Mon installation','Mon projet'];const el=id=>document.getElementById(id);const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const photoChoices={"plain":"images/maison_plain.webp","etage":"images/maison_etage.webp","granules":"images/poele_granules.webp","boisseau":"images/conduit_existant.webp","vertical":"images/conduit_vertical.webp","horizontal":"images/conduit_horizontal.webp","bois":"images/poele_bois.webp","conseil":"images/conseil.webp","ouvert":"images/sejour_ouvert.webp","cloisonne":"images/sejour_cloisonne.webp"};
+function opts(key,items,columns=''){
+ const photos=['levels','type','layout','flue'].includes(key);
+ return `<div class="choices ${columns} ${photos?'choices-photo':''}">${items.map(([v,label,sub])=>`<button type="button" class="choice ${state[key]===v?'selected':''}" data-key="${key}" data-value="${v}">${photos&&photoChoices[v]?`<img class="choice-photo" src="${photoChoices[v]}" alt="Illustration : ${label}" loading="lazy">`:''}<b>${label}</b>${sub?`<small>${sub}</small>`:''}</button>`).join('')}</div>`
+}
+function field(label,content){return `<div class="field"><label>${label}</label>${content}</div>`}
+function render(){el('progress').innerHTML=steps.map((_,i)=>`<div class="${i<=step?'on':''}"></div>`).join('');let s=`<div class="step">ÉTAPE ${step+1} / 4 · ${steps[step].toUpperCase()}</div>`;
+if(step===0){s+=`<h2>Parlons de votre maison</h2><p class="sub">Décrivez votre logement en quelques clics.</p>`+field('Votre habitation',opts('levels',[['plain','Plain-pied','Un seul niveau'],['etage','Avec étage','Deux niveaux ou plus']]))+`<div class="inputs">${field('Surface totale (m²)',`<input type="number" min="10" max="1000" data-input="total" value="${escapeHtml(state.total)}" placeholder="Ex. 120">`)}${field('Surface du RDC (m²)',`<input type="number" min="10" max="1000" ${state.levels==='plain'?'disabled aria-disabled="true" title="Calcul automatique : surface du RDC égale à la surface totale"':''} data-input="rdc" value="${state.levels==='plain'?'':escapeHtml(state.rdc)}" placeholder="${state.levels==='plain'?'Non applicable':'Ex. 80'}">`)}</div>`+field('Surface de la pièce où sera installé le poêle (m²) — facultatif',`<input type="number" min="5" max="300" data-input="room" value="${escapeHtml(state.room)}" placeholder="Ex. 35">`)+field('Isolation de la maison',opts('isolation',[['bonne','Bonne','Récente ou rénovée'],['moyenne','Moyenne','Isolation partielle'],['faible','Faible','Maison peu isolée'],['inconnue','Je ne sais pas','']],''));}
+if(step===1){s+=`<h2>Quel chauffage recherchez-vous ?</h2><p class="sub">Choisissez ce qui correspond le mieux à votre projet.</p>`+field('Votre préférence',opts('type',[['granules','Granulés','Programmable et autonome'],['bois','Bois bûches','Chaleur et tradition'],['conseil','À conseiller','Aidez-moi à choisir']],'triple'))+field('Votre séjour',opts('layout',[['ouvert','Séjour ouvert','Communique avec d’autres pièces'],['cloisonne','Pièces séparées','Portes et cloisons']]))+field('Utilisation souhaitée',opts('use',[['principal','Chauffage principal',''],['appoint','Chauffage d’appoint',''],['remplacement','Remplacement d’un poêle','']],'triple'));}
+if(step===2){s+=`<h2>Votre future installation</h2><p class="sub">Quelques repères suffisent. Nous vérifierons la solution sur place.</p>`+field('Évacuation des fumées envisagée',opts('flue',[['boisseau','Conduit existant','Boisseau ou cheminée'],['vertical','Sortie verticale','En toiture'],['horizontal','Sortie horizontale','En façade, si autorisée'],['inconnu','Je ne sais pas','À vérifier ensemble']]))+field('Hauteur approximative du conduit',opts('height',[['moins3','Moins de 3 m',''],['3a6','Entre 3 et 6 m',''],['plus6','Plus de 6 m',''],['inconnu','Je ne sais pas','']]))+`<div class="field"><strong>Photos du projet <span style="font-weight:400;color:#6a7179">(facultatives, 5 maximum)</span></strong><div class="upload">📷 <label for="photo">Ajouter plusieurs photos : emplacement, conduit, toiture, extérieur…</label><input id="photo" type="file" accept="image/*" multiple><div id="photoInfo" class="hint">${state.photos.length?state.photos.map(f=>escapeHtml(f.name)).join(' · '):'Aucune photo sélectionnée'}</div><div id="previews" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px"></div></div></div><div class="notice">Le type de sortie doit être confirmé lors de la visite technique, selon l’appareil et les règles applicables.</div>`;}
+if(step===3){s+=`<div class="result-photo"><img src="images/visuel_0eb94b979899.webp" alt="Photographie de poêle INTERSTOVES08"><div><strong>Votre projet de chauffage</strong><span>Puissance indicative, budget et sélection personnalisée</span></div></div>`;s+=`<h2>Votre estimation personnalisée</h2><p class="sub">Une première étude de votre projet, à confirmer lors de notre visite technique.</p><div class="summary">🏠 Maison : <b>${state.levels==='plain'?'plain-pied':'avec étage'}</b><br>📐 Surface : <b>${escapeHtml(state.total)} m²</b>${state.levels==='plain'?'':` dont <b>${escapeHtml(state.rdc)} m² au RDC</b>`}<br>🛋️ Pièce principale (emplacement du poêle) : <b>${state.room ? escapeHtml(state.room)+" m²" : "non renseignée"}</b><br>🧱 Isolation : <b>${({bonne:'bonne',moyenne:'moyenne',faible:'faible',inconnue:'non précisée'})[state.isolation]}</b><br>🔥 Poêle : <b>${({granules:'granulés',bois:'bois bûches',conseil:'à définir'})[state.type]}</b><br>🚪 Pièces : <b>${state.layout==='ouvert'?'séjour ouvert':'cloisonnées'}</b><br>🎯 Usage : <b>${({principal:'principal',appoint:'appoint',remplacement:'remplacement'})[state.use]}</b><br>🏠 Évacuation envisagée : <b>${({boisseau:'conduit existant',vertical:'verticale',horizontal:'horizontale',inconnu:'à déterminer'})[state.flue]}</b><br>📷 Photo : <b>${state.photos.length+' photo(s) sélectionnée(s)'}</b></div>${powerBlock()}${budgetBlock()}<h3>Comment souhaitez-vous financer votre projet ?</h3>${field('Solution envisagée',opts('finance', [['comptant','Paiement comptant',''],['2x','2 fois sans frais','Sous conditions'],['3x','3 fois sans frais','Sous conditions'],['4x','4 fois sans frais','Sous conditions'],['ecoptz','Éco-PTZ à 0 %','Sous réserve d’éligibilité'],['indecis','Je souhaite être conseillé','']],'triple'))}<p class="hint">Les paiements fractionnés sont soumis aux conditions de l’offre INTERSTOVES08. L’éco-PTZ dépend de l’éligibilité des travaux et de l’accord de l’établissement prêteur.</p><div class="notice"><b>Votre projet prend forme.</b> INTERSTOVES08 affinera la puissance, le choix du poêle et la solution de fumisterie lors de la visite technique.</div><h3 class="conversion-title">Votre première estimation personnalisée</h3><p class="conversion-intro">Sur la base des informations communiquées, INTERSTOVES08 vous présente une première estimation de votre projet de chauffage. <strong>Cette estimation est indicative.</strong> Une visite technique permettra de vérifier les caractéristiques de votre logement, de confirmer la puissance adaptée et les conditions d’installation, puis d’établir votre devis définitif.</p><div class="inputs">${field('Code postal',`<input data-input="zip" inputmode="numeric" value="${escapeHtml(state.zip)}" placeholder="08400">`)}${field('Ville / commune',`<input data-input="city" value="${escapeHtml(state.city)}" placeholder="Votre commune" autocomplete="address-level2">`)}${field('Nom',`<input data-input="name" value="${escapeHtml(state.name)}" placeholder="Votre nom">`)}${field('Téléphone',`<input data-input="phone" type="tel" value="${escapeHtml(state.phone)}" placeholder="Votre numéro">`)}${field('E-mail',`<input data-input="email" type="email" value="${escapeHtml(state.email)}" placeholder="Votre e-mail">`)}</div><div class="contact-choice"><h3>Parlons ensemble de votre projet !</h3><p>Souhaitez-vous qu’un conseiller INTERSTOVES08 vous contacte pour échanger sur votre installation ?</p><label class="contact-radio"><input type="radio" name="callback" value="oui" ${state.callback==='oui'?'checked':''}> Oui, je souhaite être rappelé.</label><label class="contact-radio"><input type="radio" name="callback" value="non" ${state.callback==='non'?'checked':''}> Non, je préfère recevoir mon estimation dans un premier temps.</label><p class="callback-hint" style="display:${state.callback==='oui'?'block':'none'}">Nous vous contacterons au numéro renseigné dans le formulaire.</p></div><p class="hint">Version de validation : le bouton prépare un e-mail dans votre messagerie. L’envoi automatique des informations et des photos devra être raccordé lors de la mise en ligne.</p><button type="button" class="btn secondary" id="copy">Copier le récapitulatif</button> <button type="button" class="btn primary" id="mail">Recevoir mon estimation personnalisée →</button><p class="hint">Gratuit · Sans engagement</p>`;}
+el('body').innerHTML=s;el('back').style.visibility=step===0?'hidden':'visible';el('next').style.display=step===3?'none':'block';el('next').disabled=!valid();document.querySelectorAll('[data-key]').forEach(b=>b.onclick=()=>{state[b.dataset.key]=b.dataset.value;if(b.dataset.key==='levels'&&b.dataset.value==='plain')state.rdc='';render()});document.querySelectorAll('[data-input]').forEach(inp=>inp.oninput=()=>{state[inp.dataset.input]=inp.value;if(inp.dataset.input==='total'&&state.levels==='plain'){state.rdc='';}el('next').disabled=!valid()});if(step===2){el('photo').onchange=e=>{const files=Array.from(e.target.files).slice(0,5);state.photos=files;el('photoInfo').textContent=files.length?files.map(f=>f.name).join(' · '):'Aucune photo';const previews=el('previews');previews.innerHTML='';files.forEach(f=>{const img=document.createElement('img');img.className='preview';img.style.maxWidth='110px';img.style.maxHeight='110px';img.alt='Photo du projet';img.src=URL.createObjectURL(f);previews.appendChild(img)});if(e.target.files.length>5)alert('Maximum 5 photos. Les cinq premières ont été conservées.')}}if(step===3){document.querySelectorAll('input[name=callback]').forEach(r=>r.onchange=()=>{state.callback=r.value;document.querySelector('.callback-hint').style.display=r.value==='oui'?'block':'none'});el('copy').onclick=()=>{navigator.clipboard.writeText(summary()+'\nSouhaite être rappelé : '+(state.callback==='oui'?'Oui':'Non')).then(()=>alert('Synthèse copiée.')).catch(()=>alert('Copie non disponible dans ce navigateur.'))};el('mail').onclick=()=>{location.href='mailto:contact@interstoves08.fr?subject='+encodeURIComponent('Pré-étude poêle – INTERSTOVES08')+'&body='+encodeURIComponent(summary()+'\nSouhaite être rappelé : '+(state.callback==='oui'?'Oui':'Non')+'\n\nPhotos à joindre manuellement si souhaité.')};}}
+function powerEstimate(){
+ const r=state.levels==='plain'?(Number(state.total)||0):(Number(state.rdc)||0),t=Number(state.total)||r;
+ // Repère commercial, non une note de dimensionnement : la surface du RDC est pondérée
+ // par la surface des étages et la configuration. L'isolation ajuste le niveau.
+ const base=r+Math.max(0,t-r)*(state.layout==='ouvert'?0.42:0.25);
+ const factor=({bonne:0.073,moyenne:0.092,faible:0.112,inconnue:0.092})[state.isolation]||0.092;
+ const demand=base*factor;
+ const levels=[6,8,9,10,11,12,13,14];
+ const middle=levels.reduce((a,b)=>Math.abs(a-demand)<=Math.abs(b-demand)?a:b);
+ const ix=levels.indexOf(middle);
+ return {low:levels[Math.max(0,ix-1)],high:levels[Math.min(levels.length-1,ix+1)],center:middle};
+}
+function powerBlock(){const p=powerEstimate();return `<section class="power-panel"><div class="power-head"><span>🔥 Puissance indicative</span><strong>${p.low} à ${p.high} kW</strong></div><p>Première plage de puissance envisagée pour votre configuration. Les surfaces, l’isolation, la distribution des pièces et l’usage du poêle seront vérifiés lors de la visite technique.</p>${field('Vous avez une puissance en tête ?',`<select data-input="powerWish"><option value="avis" ${state.powerWish==='avis'?'selected':''}>Je préfère être conseillé</option>${[6,8,9,10,11,12,13,14].map(n=>`<option value="${n}" ${state.powerWish===String(n)?'selected':''}>${n} kW</option>`).join('')}</select>`)}<small>Votre choix est indicatif : INTERSTOVES08 confirmera la puissance et le modèle lors de la visite technique.</small></section>`}
+function budgetBlock(){if(state.type==='bois'||state.type==='conseil')return `<div class="budget"><div class="budget-label">Votre première orientation</div><strong>Estimation personnalisée sur demande</strong><p>Nous vous conseillerons sur le type d'appareil et le budget adapté à votre projet.</p></div>`;if(state.flue==='vertical'||state.height==='plus6'||state.flue==='horizontal')return `<div class="budget"><div class="budget-label">Budget indicatif · poêle à granulés fourni et posé</div><strong>4 500 à 5 800 € TTC</strong><p>Cette estimation concerne la fourniture et la pose d’un poêle à granulés avec une sortie ventouse horizontale ou verticale, sous réserve de faisabilité. Le prix peut varier selon le modèle choisi, la hauteur du conduit et les contraintes techniques et réglementaires de l’habitation.</p></div>`;return `<div class="budget"><div class="budget-label">Budget indicatif · poêle à granulés fourni et posé</div><strong>4 500 à 5 800 € TTC</strong><p>Cette estimation comprend la fourniture et la pose d’un poêle à granulés avec une sortie ventouse horizontale ou verticale, sous réserve de faisabilité. Le prix final peut varier selon le modèle sélectionné, la hauteur du conduit et les contraintes techniques et réglementaires propres à votre habitation.</p></div>`}
+function summary(){return `DEMANDE DE PRÉ-ÉTUDE – INTERSTOVES08\nNom : ${state.name}\nCode postal : ${state.zip}\nVille / commune : ${state.city}\nTéléphone : ${state.phone}\nE-mail : ${state.email}\nMaison : ${state.levels}\nSurface totale : ${state.total} m²\nPièce d’installation : ${state.room||"non renseignée"} m²${state.levels==='plain'?'':'\nRDC : '+state.rdc+' m²'}\nIsolation : ${state.isolation}\nPoêle : ${state.type}\nPièces : ${state.layout}\nUsage : ${state.use}\nÉvacuation envisagée : ${state.flue}\nHauteur conduit : ${state.height}\nPhotos : ${state.photos.length} sélectionnée(s) (non jointes automatiquement)\nPuissance indicative proposée : ${powerEstimate().low} à ${powerEstimate().high} kW\nPuissance souhaitée : ${state.powerWish==='avis'?'Conseil demandé':state.powerWish+' kW'}\nFinancement souhaité : ${state.finance}\nÀ confirmer lors de la visite technique.`}
+function valid(){if(step===0)return !!state.levels&&Number(state.total)>=10&&(state.levels==='plain'||(Number(state.rdc)>=10&&Number(state.rdc)<=Number(state.total)))&&!!state.isolation;if(step===1)return !!state.type&&!!state.layout&&!!state.use;if(step===2)return !!state.flue;return true}el('next').onclick=()=>{if(valid()&&step<3){step++;render();window.scrollTo({top:0,behavior:'smooth'})}};el('back').onclick=()=>{if(step>0){step--;render()}};render();
+</script><script>
+document.getElementById('demarrer-v4').addEventListener('click', function(){
+  document.body.classList.add('parcours-actif');
+  document.getElementById('parcours-v4').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+</script><script>
+(function(){
+ const track=document.getElementById('v56-track');
+ const cards=[...track.querySelectorAll('.v56-product')];
+ let index=0;
+ function visible(){return window.matchMedia('(max-width:800px)').matches?1:3;}
+ function go(delta){
+   const max=Math.max(0,cards.length-visible());
+   index=index+delta;
+   if(index>max)index=0;
+   if(index<0)index=max;
+   track.scrollTo({left:cards[index].offsetLeft-cards[0].offsetLeft,behavior:'smooth'});
+ }
+ document.getElementById('v56-prev').addEventListener('click',()=>go(-1));
+ document.getElementById('v56-next').addEventListener('click',()=>go(1));
+ window.addEventListener('resize',()=>{index=Math.min(index,Math.max(0,cards.length-visible()));track.scrollLeft=cards[index].offsetLeft-cards[0].offsetLeft;});
+})();
+</script></body></html>
